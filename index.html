@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product-preview-card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Montserrat", sans-serif;
+        font-family: "Fraunces", serif;
+        width: 100vw;
+        height: 100vh;
+        align-content: center;
+        background-color: hsl(30, 54%, 90%);
+        /* margin: 50px; */
+      }
+      .image{
+      display: none;
+    }
+    .image1{
+      height: 500px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .container{
+      display: flex;
+      width: 50%;
+      margin: 0px auto;
+    }
+    .Perfume{
+      background-color: hsl(0, 0%, 100%);
+      height: 500px;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 35px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .Perfume h4{
+      letter-spacing: 10px;
+      font-size: 14px;
+      color: hsl(228, 12%, 48%);
+      opacity: 0.8;
+    }
+    .Perfume h1{
+      font-size: 40px;
+      color: hsl(212, 21%, 14%);
+    }
+    .Perfume p{
+      font-size: 17px;
+      color: hsl(228, 12%, 48%);
+      opacity: 0.8;
+      line-height: 25px;
+    }
+    .amount{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .amount h2{
+      font-size: 40px;
+      font-family: "Fraunces", serif;
+      color: hsl(158, 36%, 37%);
+    }
+    .amount p{
+      text-decoration: line-through;
+      font-size: 18px;
+    }
+    .chart{
+      background-color: hsl(158, 36%, 37%);
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 70px;
+      border-radius: 15px;
+    }
+    .chart h3{
+      color: hsl(0, 0%, 100%);
+    }
+    .chart img{
+      width: 25px;
+      height: 25px;
+    }
+    .chart:hover {
+      border: 1px solid black;
+      background-color: red;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      color: hsl(216, 12%, 8%);
+      opacity: 0.9;
+      }
+      @media (max-width:620px){
+        body{
+          width: 100%
+        }
+        .container{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding: 15px;
+        }
+        .Perfume{
+          width: 100%;
+          gap: 20px;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+        }
+        .image1{
+          display: none;
+          
+        }
+        .image{
+          display: flex;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+      }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div>
+        <img src="./images/image-product-desktop.jpg" alt="" class="image1">
+      </div>
+      <img src="./images/image-product-mobile.jpg" alt="" class="image">
+      <div class="Perfume">
+        <h4>PERFUME</h4>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="amount">
+          <h2>$149.99</h2>
+          <p>$169.99</p>
+        </div>
+        <div class="chart">
+          <img src="./images/icon-cart.svg" alt="">
+          <h3>Add to Cart</h3>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Victory Obasi Oguchiluru</a>.
+  </div>
+  </main>
+</body>
+</html>
